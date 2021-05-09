@@ -12,3 +12,5 @@ RUN \
   sed -i 's/^logFile/# logFile/' /etc/polipo/config && \
   sed -i 's/^logSyslog/# logSyslog/' /etc/polipo/config && \
   nl /etc/polipo/config
+
+ENTRYPOINT [ "polipo" ]
